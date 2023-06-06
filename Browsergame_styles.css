@@ -1,0 +1,98 @@
+body {
+    margin:0px;
+    background-image:url('png.png');
+    background-repeat:repeat-x;
+    background-size:.2%;
+
+}
+.sndBtn {
+    width: 30px;
+    height: 30px;
+    background-color:black;
+    opacity:0.5;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+    color:white;
+    font-size:20px;
+    position:absolute;
+    top:0;
+    left:0;
+    box-shadow:2px 2px 2px gray;
+}
+button.sndBtn:hover {
+    animation: fade .4s normal linear;
+    opacity:0.8;
+}
+
+h1 {
+    font-size: 170px;
+    text-align: center;
+    display: block;
+    font-family: 'Comic Sans MS';
+    text-shadow:2px 2px 2px gray;
+}
+.goblin {
+    margin:auto;
+    animation: rotation 10s infinite linear;
+    height:230px;
+    display:block;
+}
+@keyframes rotation {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(359deg);
+    }
+}
+p {
+    margin:30px;
+    font-size:30px;
+    font-family:Cambria;
+    text-shadow: 1px 1px 1px gray;
+}
+.vidLinks {
+    font-size:40px;
+    font-family:Cambria;
+}
+h2 {
+    font-size:400px;
+    font-family:'Comic Sans MS';
+    color:ThreeDDarkShadow;
+    text-shadow:3px 3px 3px gray;
+    width:400px;
+    opacity:0.8;
+    animation: flicker .2s infinite linear;
+    top:-100px;
+    left:1340px;
+    position:absolute;
+}
+@keyframes flicker {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:0.8;
+    }
+}
+@keyframes defade {
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
